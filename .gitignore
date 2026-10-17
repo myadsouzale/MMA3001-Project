@@ -1,0 +1,18 @@
+
+# Original and processed data
+data/
+*.zip
+*.csv
+
+# Virtual environment
+.venv/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Secrets
+.env
