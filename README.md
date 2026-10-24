@@ -408,3 +408,33 @@ The original occupancy dataset is not redistributed through this repository. Acc
 The data analysis, model comparisons, performance benchmarking and sensitivity analysis have been completed.
 
 Repository documentation, automated software testing and final assessment materials are being finalised.
+
+## Automated Testing
+
+Automated unit testing was implemented using `pytest` to verify the correctness of key occupancy prediction functions.
+
+The test suite includes 10 tests covering:
+
+- MAE and RMSE calculations, including known and perfect predictions.
+- Handling of negative predicted headcounts.
+- One-hot encoding and feature alignment.
+- Historical space-mean predictions.
+- Weekly occupancy pattern predictions.
+- Fallback behaviour when historical combinations are unavailable.
+- Global mean predictions for previously unseen spaces.
+
+**Test results:** 10 passed, 0 failed.
+
+**Execution time:** 9.64 seconds.
+
+The tests use small synthetic datasets with known expected outputs, allowing function behaviour to be verified independently of the full occupancy dataset.
+
+To run the tests:
+
+```bash
+python -m pytest tests/ -v
+```
+
+Test evidence is stored in `results/test_report.txt` and `results/test_report.xml`.
+
+These unit tests verify selected prediction functions but do not establish correctness of the entire data-processing pipeline.
