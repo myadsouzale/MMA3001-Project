@@ -1,0 +1,19 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.13.12, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Mya\OneDrive\Documents\MMA3001 Building Occupancy Project\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Mya\OneDrive\Documents\MMA3001 Building Occupancy Project
+plugins: anyio-4.15.1, platformdirs-4.13.0
+collecting ... collected 10 items
+
+tests/test_prediction_functions.py::test_perfect_predictions PASSED      [ 10%]
+tests/test_prediction_functions.py::test_known_prediction_errors PASSED  [ 20%]
+tests/test_prediction_functions.py::test_negative_predictions_are_clipped PASSED [ 30%]
+tests/test_prediction_functions.py::test_feature_encoding PASSED         [ 40%]
+tests/test_prediction_functions.py::test_feature_alignment PASSED        [ 50%]
+tests/test_prediction_functions.py::test_space_mean_prediction PASSED    [ 60%]
+tests/test_prediction_functions.py::test_weekly_pattern_prediction PASSED [ 70%]
+tests/test_prediction_functions.py::test_weekly_fallback_to_space_hour PASSED [ 80%]
+tests/test_prediction_functions.py::test_weekly_fallback_to_space_mean PASSED [ 90%]
+tests/test_prediction_functions.py::test_unknown_space_uses_global_mean PASSED [100%]
+
+============================= 10 passed in 2.34s ==============================
