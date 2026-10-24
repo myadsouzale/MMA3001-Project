@@ -50,6 +50,7 @@ Decisions:
 Completed:
 - analysed weekly patterns, results in graph form
 Findings:
+- predictions can be made from this data, there are clear patterns
 Decisions:
 - split data: 70% training, 15% validation, 15% testing
 
@@ -76,4 +77,12 @@ Decisions:
 - stick with 80% coverage and suggest 50% as improvement
 
 24/10
-- readme..
+Completed:
+- README file completed
+- file/function documentation updated 
+- final checks on github done 
+- test files created and checked
+Findings:
+- everything in order
+Decisions:
+- ready to write up project documentation
